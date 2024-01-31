@@ -15,11 +15,11 @@ This is a simple user registration by OTP verification in smtp API. This project
 ## Usage
 1. Clone this repository
 ```bash
-git clone 
+git clone https://github.com/AbdurRaahimm/OTP-Verify-signUp.git
 ```
 2. Go to the project directory
 ```bash
-cd 
+cd OTP-Verify-signUp
 ```
 3. Run The Essential Dependency
 ```bash
@@ -48,7 +48,7 @@ npm run build
 
 
 ## Demo
-- [Live Demo]()
+- [Live Demo](https://otp-verify-signup.vercel.app/)
 
 
 ## Tools
