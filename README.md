@@ -1,34 +1,62 @@
-# React Vite Tailwind Project
-This is a template for a React project with Vite and Tailwind CSS.
+# User Registration by OTP Verification in smtp API  
+
+## About 
+This is a simple user registration by OTP verification in smtp API. This project is created with React, Vite, Tailwind CSS, ESLint, smtp API. This project is created for learning purpose.
+
+## Table of Contents
+- [About](#about)
+- [Usage](#usage)
+- [Features](#features)
+- [Demo](#demo)
+- [Tools](#tools)
+- [Connect on Social Media](#connect-on-social-media)
+
 
 ## Usage
 1. Clone this repository
 ```bash
-git clone https://github.com/AbdurRaahimm/react-vite-tailwind-starter.git
+git clone 
 ```
-2. Run The Essential Dependency
+2. Go to the project directory
+```bash
+cd 
+```
+3. Run The Essential Dependency
 ```bash
 npm install
 ```
-3. Run `npm run dev` to start the development server
+4. Run `npm run dev` to start the development server
 ```bash
 npm run dev
 ```
-4. Run `npm run build` to build the project
+5. Run `npm run build` to build the project
 ```bash
 npm run build
 ```
-5. Run `npm run serve` to serve the build
-```bash
-npm run serve
-```
 
 ## Features
+- User Registration by OTP Verification in smtp API
+- User Login 
+- User Logout
+
+## Screenshots 
+![signUp](public/image.png)
+![signIn](public/image-1.png)
+![OTP Verify](public/image-2.png)
+![Home](public/image-3.png)
+
+
+
+## Demo
+- [Live Demo]()
+
+
+## Tools
 - React
 - Vite
 - Tailwind CSS
 - ESLint
-- Prettier
+- smtp API
 
 
 ## Connect on Social Media

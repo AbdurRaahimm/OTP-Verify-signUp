@@ -1,6 +1,6 @@
 {
-  "name": "react-vite-tailwind-starter",
-  "description": "A starter template for React 18 + Vite 4 + Tailwind CSS 3",
+  "name": "otp-send",
+  "description": "OTP send in email by smtp",
   "author": "rahim123",
   "license": "MIT",
   "version": "0.0.1",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
@@ -30,8 +31,6 @@
   },
   "keywords": [
     "react",
-    "vite",
-    "tailwindcss",
-    "starter"
+    "vite"
   ]
 }
