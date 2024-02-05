@@ -8,8 +8,8 @@ export default function Navbar() {
     const logoutHandler = () => {
         user.isLogin = false;
         localStorage.setItem('users', JSON.stringify(users));
-        window.location.href = '/signin'
-        // navigateTo('/signin')
+        // window.location.href = '/signin'
+        navigateTo('/signin')
     }
     return (
         <header className='bg-slate-300 flex justify-between items-center px-4 text-black shadow-md' >
