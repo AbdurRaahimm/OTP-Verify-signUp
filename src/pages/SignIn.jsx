@@ -17,8 +17,8 @@ export default function SignIn() {
         if(user){
             user.isLogin = true;
             localStorage.setItem('users', JSON.stringify(users));
-            window.location.href = '/';
-            // navigateTo('/');
+            // window.location.href = '/';
+            navigateTo('/');
         }else{
             alert('email or password is incorrect');
         }
