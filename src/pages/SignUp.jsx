@@ -1,9 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLoaderData } from 'react-router-dom';
 import { useOTP } from '../store/OTPProvider';
 import { generateCapture } from '../utilis/generateCapture';
+import { useDataPass } from '../store/DataPassProvider';
 
 export default function SignUp() {
+  const { setData } = useDataPass();
   const navigateTo = useNavigate();
   const otp = useOTP();
   // console.log(otp);
@@ -38,8 +40,10 @@ export default function SignUp() {
       isLogin: false,
     }
 
-    users.push(newUser);
-    localStorage.setItem('users', JSON.stringify(users));
+    // data send to verify.jsx page
+    setData(newUser);
+
+    // send otp to email
     Email.send({
       SecureToken: import.meta.env.VITE_OTP_PASS,
       To: email,
@@ -47,7 +51,10 @@ export default function SignUp() {
       Subject: "Account Verification",
       Body: "This is your OTP : " + otp,
     }).then(
-      message => alert(message)
+      message => { 
+        // if message ok alert check your email 
+        alert(`OTP Send to Your email : ${email}`)
+      }
     );
     navigateTo('/verify');
   }

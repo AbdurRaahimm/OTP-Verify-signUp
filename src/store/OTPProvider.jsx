@@ -4,6 +4,7 @@ import { generateOTP } from "../utilis/generateOTP";
 export const OTPContext = createContext();
 
 export default function OTPProvider({ children}) {
+
   return (
     <OTPContext.Provider value={generateOTP()}>
       {children}
